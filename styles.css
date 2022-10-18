@@ -1,0 +1,97 @@
+/* Universal */
+
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    height: 3rem;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 1rem;
+}
+/* Nav */
+
+nav {
+    position: fixed;
+    float: left;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    height: 90rem;
+}
+
+nav div {
+    background-color: linear-gradient(white,white,white,white,black);
+    width: 15rem;
+    margin-left: .5rem;
+}
+
+.content ul {
+    list-style-type: none;
+}
+
+.content span {
+    font-size: 1.5rem;
+}
+
+.content ul li {
+    margin: 2rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* About Me Section */
+
+#about-me {
+    width: 100%;
+    position: absolute;
+    top: 3.5rem;
+    left: 16rem;
+}
+
+#about-me article {
+    width: 70%;
+}
+
+#about-me p {
+    margin: 2rem;
+}
+
+/* Projects Section */
+
+#projects {
+    width: 100%;
+    position: absolute;
+    left: 7rem;
+    top: 20rem;
+}
+
+.project-container {
+    display: grid;
+    grid-template: repeat(3,1fr)/repeat(2,1fr);
+}
+
+.project-container figure {
+    text-align: center;
+}
+
+.project-container img {
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover;
+}
