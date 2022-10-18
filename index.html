@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Louis Forshaw-Perring</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 </head>
 <body>
     <header>
@@ -13,7 +14,7 @@
     </header>
     <nav>
         <div class="content">
-            <span>Projects</span>
+            <span class="project">Projects</span>
                 <ul class="project-links">
                 <li><a href="#">Etch-A-Sketch</a></li>
                 <li><a href="#">Calculator</a></li>
@@ -21,7 +22,7 @@
                 <li><a href="#">Mixed Messages</a></li>
                 <li><a href="#">Rock, Paper, Scissors!</a></li>
                 </ul>
-        <span><a href="#">Contact Me</a></span>
+        <span><a href="#" id="contact-me">Contact Me</a></span>
         </ul>
         </div>
     </nav>
@@ -37,50 +38,82 @@
             Career Switch I hope to be proficient in C# (C sharp), jQuery, PHP and Java! Feel free to watch my
             journey from absolute beginner to (hopefully) a semi-decent programmer. 
             </p>
+
+            <p>My email address is <a href="mailto:louisjfp@gmail.com" id="e-mail">louisjfp@gmail.com</a></p>
             </article>
         </section>
         <section id="projects">
+            <h3>My projects</h3>
             <div class="project-container">
             <div class="project">
                 <figure>
+                    <a href="#">
                     <img src="./img/photo-2.jpg" alt="">
-                    <figcaption>My Etch-A-Sketch Project</figcaption>
+                    <figcaption>My Etch-A-Sketch Project, using JavaScript and some HTML
+                        I was able to start learning to manipulate and create DOM HTML elements
+                    </figcaption>
+                </a>
                 </figure>
             </div>
             <div class="project">
                 <figure>
+                    <a href="#">
                     <img src="./img/calculator.jpg" alt="">
-                    <figcaption>My Calculator Project</figcaption>
+                    <figcaption>My Calculator Project, this was a primairly JavaScript-based challenge
+                    </figcaption>
+                </a>
                 </figure>
             </div>
             <div class="project">
                 <figure>
+                    <a href="#">
                     <img src="./img/photo-3.jpg" alt="">
-                    <figcaption>My Landing Page Project</figcaption>
+                    <figcaption>My Landing Page Project, this was a HTML and CSS exercise to recreate
+                        a design given to me as accurately as possible
+                    </figcaption>
+                    </a>
                 </figure>
             </div>
-            <div class="project">
+            <div class="project extra-mobile">
                 <figure>
+                    <a href="#">
                     <img src="./img/photo-4.jpg" alt="">
-                    <figcaption>My Mixed Messages Project</figcaption>
+                    <figcaption>My Mixed Messages Project, a short exercise on random number generators
+                        in JavaScript
+                    </figcaption>
+                </a>
                 </figure>
             </div>
-            <div class="project extra">
+            <div class="project extra-tablet">
                 <figure>
+                    <a href="#">
                     <img src="./img/photo-5.jpg" alt="">
-                    <figcaption>My Rock, Paper, Scissors Project</figcaption>
+                    <figcaption>My Rock, Paper, Scissors Project, another JavaScript exercise which required a 
+                        detailed case analysis for each scenario
+                    </figcaption>
+                </a>
                 </figure>
             </div>
             </div>
         </section>
-        <section class="skills">
-            Here is my soon-to-be growing list of skills:
-            <div class="skills-container"></div>
+        <section id="skills">
+            <div class="content">
+            <h3>Skills</h3>
+            <p>Here is my soon-to-be growing list of skills:</p>
+            <div class="image-container">
+            <img src="./img/HTML5_Logo_256.png" alt="HTML logo" id="skills-image">
+            <img src="./img/css3-logo-png-transparent.png" alt="CSS logo" class="extra">
+            <img src="./img/git-logo-png-transparent.png" alt="Git Logo" class="extra">
+            <img src="./img/github-icon-1-logo-png-transparent.png" alt="GitHub logo" class="extra">
+            <img src="./img/javascript-logo-pack/javascript-logo-png-transparent.png" alt="JavaScript logo" class="extra">
+            </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>Made By Louis Forshaw-Perring</p>
-        <p>Dated: 17/10/2022</p>
+        <p>Dated: 17-10-2022</p>
     </footer>
+    <script src="./script.js" defer></script>
 </body>
 </html>
